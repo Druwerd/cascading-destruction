@@ -11,11 +11,11 @@ end
 
 live_loop :chords do
   with_fx :echo, decay: 2 do
-    play chord(:C, :major), amp: 5
+    play chord(:C, :major), release: 1
     sleep 2
-    play chord(:F, :major), amp: 5
+    play chord(:F, :major), release: 1
     sleep 2
-    play chord(:G, :major), amp: 5
+    play chord(:G, :major), release: 1
     sleep 2
   end
 end
