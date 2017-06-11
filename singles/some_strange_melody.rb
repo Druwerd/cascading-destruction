@@ -1,16 +1,14 @@
 # Some Strange Melody
 
-use_bpm 60
-duration = 30
+use_bpm 60 # each beat is 1 second
+duration = 30 # seconds
 
-in_thread do
-  loop do
-    sync :strange_sounds
-    with_fx :reverb, room: 1 do
-      sample :elec_ping, rate: 0.5, amp: 2
-      sample :ambi_soft_buzz, rate: 2, amp: 1
-      sample :guit_e_slide, rate: -1, amp: 2
-    end
+live_loop :sounds_loop do
+  sync :strange_sounds
+  with_fx :reverb, room: 1 do
+    sample :elec_ping, rate: 0.5, amp: 2
+    sample :ambi_soft_buzz, rate: 2, amp: 1
+    sample :guit_e_slide, rate: -1, amp: 2
   end
 end
 
@@ -20,42 +18,37 @@ define :fx_chord do |chord_name|
   end
 end
 
-in_thread do
-  loop do
-    sync :melody
-    [:C, :F, :G].each do |chord_name|
-      fx_chord(chord_name)
-      sleep 2
-    end
+live_loop :melody_loop do
+  sync :melody
+  [:C, :F, :G].each do |chord_name|
+    fx_chord(chord_name)
+    sleep 2
   end
 end
 
-in_thread do
-  loop do
-    sync :beat
-    sample :bd_pure, amp: 10
-  end
+live_loop :rhythm_loop do
+  sync :rhythm
+  sample :bd_pure, amp: 10
 end
 
-# half beat
+# main rhythm
 in_thread do
   (duration * 2).times do
-    cue :beat
-    sleep 0.5
+    cue :rhythm
+    sleep 0.5 # on every half beat
   end
 end
 
-# whole beat
-in_thread do
-  duration.times do
+at 5 do # new thread starts on beat 5
+  (duration - 5).times do
     cue :strange_sounds
-    sleep 1
+    sleep 1 # on every beat
   end
 end
 
-# start melody
-at 5 do
-  (duration - 10).times do
+# melody comes in on beat 9
+at 9 do
+  (duration - 13).times do
     cue :melody
     sleep 1
   end
