@@ -12,12 +12,15 @@
 # `.___/ /====/ /=//=/ /====/____/
 #      `--------------------'
 
-use_bpm 60 # beats per minute
+use_bpm 120 # beats per minute
 duration = 60 # total beats
+destruction_time = 55
+destruction_level = 11 # goes to eleven
 
-# Cascade function
-define :cascade do
-  10.times do
+# Cascade thread
+in_thread do
+  loop do
+    sync :cascade # blocks until cued
     sample :ambi_drone, rate: -1, amp: 10
     cue :destruction
   end
@@ -26,7 +29,7 @@ end
 # Destruction thread
 in_thread do
   loop do
-    sync :destruction # blocks until cued
+    sync :destruction
     if one_in(2)
       sample :bass_hard_c, decay: 5, amp: 5
     else
@@ -68,10 +71,6 @@ end
 in_thread do
   (duration * 2).times do
     cue :fx
-    at (duration / 2) do
-      # runs in thread
-      cascade
-    end
     sleep 0.5
   end
 end
@@ -82,6 +81,13 @@ in_thread do
   duration.times do
     cue :drum
     cue :chords if (beat % 2) == 0
+    sleep 1
+  end
+end
+
+at destruction_time do # start cascading destruction!
+  destruction_level.times do
+    cue :cascade
     sleep 1
   end
 end
