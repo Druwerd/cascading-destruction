@@ -6,35 +6,35 @@ use_bpm 68
 
 # quarter note is 1 beat
 define :play_quarter_note do |note_name|
-  with_fx :reverb, room: 0.8 do
+  with_fx :reverb, room: 0.9 do
     play note_name, attack: 0.1, decay: 0.1, sustain: 0.5, release: 0.3
   end
 end
 
 # 1 & 1/2
 define :play_dotted_quarter_note do |note_name|
-  with_fx :reverb, room: 0.8 do
+  with_fx :reverb, room: 0.9 do
     play note_name, attack: 0.1, decay: 0.1, sustain: 1, release: 0.3
   end
 end
 
 # 2 beats
 define :play_half_note do |note_name|
-  with_fx :reverb, room: 0.8 do
+  with_fx :reverb, room: 0.9 do
     play note_name, attack: 0.25, decay: 0.25, sustain: 1, release: 0.5
   end
 end
 
 # 3 beats
 define :play_dotted_whole_note do |note_name|
-  with_fx :reverb, room: 0.8 do
+  with_fx :reverb, room: 0.9 do
     play note_name, attack: 0.25, decay: 0.25, sustain: 2, release: 0.5
   end
 end
 
 # whole note is 4 beats
 define :play_whole_note do |note_name|
-  with_fx :reverb, room: 0.8 do
+  with_fx :reverb, room: 0.9 do
     play note_name, attack: 0.25, decay: 0.25, sustain: 3, release: 0.5
   end
 end
