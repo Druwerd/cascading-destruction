@@ -72,60 +72,48 @@ in_thread do
   end
 
   # 4th measure
-  1.times do
-    play_quarter_note 55+1 # G#
-    sleep 0.5
-    play_quarter_note 59+1 # B#
-    sleep 0.5
-    play_quarter_note 65 # F
-    sleep 0.5
-  end
+  play_quarter_note 55+1 # G#
+  sleep 0.5
+  play_quarter_note 59+1 # B#
+  sleep 0.5
+  play_quarter_note 65 # F
+  sleep 0.5
 
-  1.times do
-    play_quarter_note 55+1 # G#
-    sleep 0.5
-    play_quarter_note 60+1 # C#
-    sleep 0.5
-    play_quarter_note 64 # E
-    sleep 0.5
-  end
+  play_quarter_note 55+1 # G#
+  sleep 0.5
+  play_quarter_note 60+1 # C#
+  sleep 0.5
+  play_quarter_note 64 # E
+  sleep 0.5
 
-  1.times do
-    play_quarter_note 55+1 # G#
-    sleep 0.5
-    play_quarter_note 60+1 # C#
-    sleep 0.5
-    play_quarter_note 62+1+1 # D##
-    sleep 0.5
-  end
+  play_quarter_note 55+1 # G#
+  sleep 0.5
+  play_quarter_note 60+1 # C#
+  sleep 0.5
+  play_quarter_note 62+1+1 # D##
+  sleep 0.5
 
-  1.times do
-    play_quarter_note 53+1 # F
-    sleep 0.5
-    play_quarter_note 59+1 # B
-    sleep 0.5
-    play_quarter_note 62+1 # D#
-    sleep 0.5
-  end
+  play_quarter_note 53+1 # F
+  sleep 0.5
+  play_quarter_note 59+1 # B
+  sleep 0.5
+  play_quarter_note 62+1 # D#
+  sleep 0.5
 
   # 5th measure
-  1.times do
-    play_quarter_note 52 # E
-    sleep 0.5
-    play_quarter_note 55+1 # G#
-    sleep 0.5
-    play_quarter_note 60+1 # C#
-    sleep 0.5
-  end
+  play_quarter_note 52 # E
+  sleep 0.5
+  play_quarter_note 55+1 # G#
+  sleep 0.5
+  play_quarter_note 60+1 # C#
+  sleep 0.5
 
-  1.times do
-    play_quarter_note 55+1 # G#
-    sleep 0.5
-    play_quarter_note 60+1 # C#
-    sleep 0.5
-    play_quarter_note 64 # E
-    sleep 0.5
-  end
+  play_quarter_note 55+1 # G#
+  sleep 0.5
+  play_quarter_note 60+1 # C#
+  sleep 0.5
+  play_quarter_note 64 # E
+  sleep 0.5
 
   2.times do
     play_quarter_note 55+1 # G#
@@ -163,26 +151,21 @@ in_thread do
 
   # 7th measure
   play_half_note 67+1 # G#
-  
-  1.times do
-    play_quarter_note 55+1 # G#
-    sleep 0.5
-    play_quarter_note 60+1 # C#
-    sleep 0.5
-    play_quarter_note 64 # E
-    sleep 0.5
-  end
-  
-  1.times do
-    play_quarter_note 55+1 # G#
-    sleep 0.5
-    play_quarter_note 60+1 # C#
-    sleep 0.5
-    play_quarter_note 64 # E
-    sleep 0.5
-  end
+  play_quarter_note 55+1 # G#
+  sleep 0.5
+  play_quarter_note 60+1 # C#
+  sleep 0.5
+  play_quarter_note 64 # E
+  sleep 0.5
+
+  play_quarter_note 55+1 # G#
+  sleep 0.5
+  play_quarter_note 60+1 # C#
+  sleep 0.5
+  play_quarter_note 64 # E
+  sleep 0.5
+
   play_half_note 69 # A
-  
   2.times do
     play_quarter_note 57 # A
     sleep 0.5
@@ -202,26 +185,22 @@ in_thread do
     play_quarter_note 64 # E
     sleep 0.5
   end
+
   play_quarter_note 65+1 # F#
-
-  1.times do
-    play_quarter_note 57 # A
-    sleep 0.5
-    play_quarter_note 59 # B
-    sleep 0.5
-    play_quarter_note 62+1 # D#
-    sleep 0.5
-  end
+  play_quarter_note 57 # A
+  sleep 0.5
+  play_quarter_note 59 # B
+  sleep 0.5
+  play_quarter_note 62+1 # D#
+  sleep 0.5
+  
   play_quarter_note 71 # B
-
-  1.times do
-    play_quarter_note 57 # A
-    sleep 0.5
-    play_quarter_note 59 # B
-    sleep 0.5
-    play_quarter_note 62+1 # D#
-    sleep 0.5
-  end
+  play_quarter_note 57 # A
+  sleep 0.5
+  play_quarter_note 59 # B
+  sleep 0.5
+  play_quarter_note 62+1 # D#
+  sleep 0.5
 
   # 9th measure
   play_quarter_note 64 # E
@@ -244,17 +223,15 @@ in_thread do
     sleep 0.5
   end
 
-  1.times do
-    play_dotted_quarter_note 67 # G
-    play_quarter_note 55 # G
-    sleep 0.5
-    play_quarter_note 59 # B
-    sleep 0.5
-    play_quarter_note 64 # E
-    sleep 0.5
-    play_dotted_quarter_note 67 # G
-    sleep 0.5
-  end
+  play_dotted_quarter_note 67 # G
+  play_quarter_note 55 # G
+  sleep 0.5
+  play_quarter_note 59 # B
+  sleep 0.5
+  play_quarter_note 64 # E
+  sleep 0.5
+  play_dotted_quarter_note 67 # G
+  sleep 0.5
 
   # 11th measure
   play_dotted_half_note 67 # G
@@ -267,17 +244,15 @@ in_thread do
     sleep 0.5
   end
 
-  1.times do
-    play_dotted_quarter_note 67 # G
-    play_quarter_note 55 # G
-    sleep 0.5
-    play_quarter_note 59 # B
-    sleep 0.5
-    play_quarter_note 65 # F
-    sleep 0.5
-    play_dotted_quarter_note 67 # G
-    sleep 0.5
-  end
+  play_dotted_quarter_note 67 # G
+  play_quarter_note 55 # G
+  sleep 0.5
+  play_quarter_note 59 # B
+  sleep 0.5
+  play_quarter_note 65 # F
+  sleep 0.5
+  play_dotted_quarter_note 67 # G
+  sleep 0.5
 
   # 12th measure
   play_half_note 67 # G
@@ -315,31 +290,23 @@ end
 # C♯, D♯, E, F♯, G♯, A, and B
 in_thread do
   # 1st measure
-  1.times do
-    play_whole_note 48+1 # C#
-    play_whole_note 36+1 # C#
-    sleep 6
-  end
+  play_whole_note 48+1 # C#
+  play_whole_note 36+1 # C#
+  sleep 6
 
   # 2nd measure
-  1.times do
-    play_whole_note 47 # B
-    play_whole_note 35 # B
-    sleep 6
-  end
+  play_whole_note 47 # B
+  play_whole_note 35 # B
+  sleep 6
 
   # 3rd measure
-  1.times do
-    play_half_note 45 # A
-    play_half_note 33 # A
-    sleep 3
-  end
+  play_half_note 45 # A
+  play_half_note 33 # A
+  sleep 3
 
-  1.times do
-    play_half_note 41+1 # F#
-    play_half_note 29+1 # F#
-    sleep 3
-  end
+  play_half_note 41+1 # F#
+  play_half_note 29+1 # F#
+  sleep 3
 
   # 4th measure
   2.times do
@@ -349,33 +316,25 @@ in_thread do
   end
 
   # 5th measure
-  1.times do
-    play_whole_note 48+1 # C#
-    play_whole_note 43+1 # G#
-    play_whole_note 36+1 # C#
-    sleep 6.5
-  end
+  play_whole_note 48+1 # C#
+  play_whole_note 43+1 # G#
+  play_whole_note 36+1 # C#
+  sleep 6.5
 
   # 6th measure
-  1.times do
-    play_whole_note 47+1 # B#
-    play_whole_note 43+1 # G#
-    play_whole_note 35+1 # B#
-    sleep 6.5
-  end
+  play_whole_note 47+1 # B#
+  play_whole_note 43+1 # G#
+  play_whole_note 35+1 # B#
+  sleep 6.5
 
   # 7th measure
-  1.times do
-    play_half_note 48+1 # C#
-    play_half_note 36+1 # C#
-    sleep 3
-  end
+  play_half_note 48+1 # C#
+  play_half_note 36+1 # C#
+  sleep 3
 
-  1.times do
-    play_half_note 41+1 # F#
-    play_half_note 29+1 # F#
-    sleep 3
-  end
+  play_half_note 41+1 # F#
+  play_half_note 29+1 # F#
+  sleep 3
 
   # 8th measure
   2.times do
@@ -385,25 +344,19 @@ in_thread do
   end
 
   # 9th measure
-  1.times do
-    play_whole_note 52 # E
-    play_whole_note 40 # E
-    sleep 6
-  end
+  play_whole_note 52 # E
+  play_whole_note 40 # E
+  sleep 6
 
   # 10th measure
-  1.times do
-    play_whole_note 52 # E
-    play_whole_note 40 # E
-    sleep 6.5
-  end
+  play_whole_note 52 # E
+  play_whole_note 40 # E
+  sleep 6.5
 
   # 11th measure
-  1.times do
-    play_whole_note 50 # D
-    play_whole_note 38 # D
-    sleep 6.5
-  end
+  play_whole_note 50 # D
+  play_whole_note 38 # D
+  sleep 6.5
 
   # 12th measure
   2.times do
@@ -412,9 +365,7 @@ in_thread do
     sleep 1.5
   end
 
-  1.times do
-    play_half_note 47+1 # B#
-    play_half_note 35+1 # B#
-    sleep 3
-  end
+  play_half_note 47+1 # B#
+  play_half_note 35+1 # B#
+  sleep 3
 end
