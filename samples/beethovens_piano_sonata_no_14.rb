@@ -26,7 +26,7 @@ define :play_half_note do |note_name|
 end
 
 # 3 beats
-define :play_dotted_whole_note do |note_name|
+define :play_dotted_half_note do |note_name|
   with_fx :reverb, room: 0.9 do
     play note_name, attack: 0.25, decay: 0.25, sustain: 2, release: 0.5
   end
@@ -139,7 +139,7 @@ in_thread do
   sleep 0.5
 
   # 6th measure
-  play_dotted_whole_note 67+1 # G#
+  play_dotted_half_note 67+1 # G#
   
   2.times do
     play_quarter_note 55+1 # G#
@@ -254,6 +254,29 @@ in_thread do
     sleep 0.5
   end
   play_dotted_quarter_note 67 # G
+
+  # 11th measure
+  play_dotted_half_note 67 # G
+  3.times do
+    play_quarter_note 55 # G
+    sleep 0.5
+    play_quarter_note 59 # B
+    sleep 0.5
+    play_quarter_note 65 # F
+    sleep 0.5
+  end
+
+  1.times do
+    play_dotted_quarter_note 67 # G
+    play_quarter_note 55 # G
+    sleep 0.5
+    play_quarter_note 59 # B
+    sleep 0.5
+    play_quarter_note 65 # F
+    sleep 0.5
+    play_dotted_quarter_note 67 # G
+    sleep 0.5
+  end
 end
 
 # Bass clef (C# minor)
@@ -340,6 +363,13 @@ in_thread do
   1.times do
     play_whole_note 52 # E
     play_whole_note 40 # E
-    sleep 6
+    sleep 6.5
+  end
+
+  # 11th measure
+  1.times do
+    play_whole_note 50 # D
+    play_whole_note 38 # D
+    sleep 6.5
   end
 end
