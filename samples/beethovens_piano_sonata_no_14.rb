@@ -243,17 +243,18 @@ in_thread do
     play_quarter_note 64 # E
     sleep 0.5
   end
-  play_dotted_quarter_note 67 # G
 
   1.times do
+    play_dotted_quarter_note 67 # G
     play_quarter_note 55 # G
     sleep 0.5
     play_quarter_note 59 # B
     sleep 0.5
     play_quarter_note 64 # E
     sleep 0.5
+    play_dotted_quarter_note 67 # G
+    sleep 0.5
   end
-  play_dotted_quarter_note 67 # G
 
   # 11th measure
   play_dotted_half_note 67 # G
@@ -277,6 +278,37 @@ in_thread do
     play_dotted_quarter_note 67 # G
     sleep 0.5
   end
+
+  # 12th measure
+  play_half_note 67 # G
+  play_quarter_note 55 # G
+  sleep 0.5
+  play_quarter_note 60 # C
+  sleep 0.5
+  play_quarter_note 64 # E
+  sleep 0.5
+
+  play_quarter_note 55 # G
+  sleep 0.5
+  play_quarter_note 59 # B
+  sleep 0.5
+  play_quarter_note 64 # E
+  sleep 0.5
+
+  play_quarter_note 55 # G
+  sleep 0.5
+  play_quarter_note 59+1 # B#
+  sleep 0.5
+  play_quarter_note 64 # E
+  sleep 0.5
+
+  play_quarter_note 65+1 # F#
+  play_quarter_note 53+1 # F#
+  sleep 0.5
+  play_quarter_note 60+1 # C#
+  sleep 0.5
+  play_quarter_note 64 # E
+  sleep 0.5
 end
 
 # Bass clef (C# minor)
@@ -371,5 +403,18 @@ in_thread do
     play_whole_note 50 # D
     play_whole_note 38 # D
     sleep 6.5
+  end
+
+  # 12th measure
+  2.times do
+    play_quarter_note 48 # C
+    play_quarter_note 36 # C
+    sleep 1.5
+  end
+
+  1.times do
+    play_half_note 47+1 # B#
+    play_half_note 35+1 # B#
+    sleep 3
   end
 end
