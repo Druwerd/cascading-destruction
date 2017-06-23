@@ -1,7 +1,7 @@
 # Beethoven's Piano Sonata No. 14 (Moonlight Sonata)
 
 use_synth :piano
-use_synth_defaults hard: 0.35, stereo_width: 0.33, vel: 0.16
+use_synth_defaults hard: 0.25, stereo_width: 0.33, vel: 0.22
 
 use_bpm 68
 
@@ -249,6 +249,43 @@ in_thread do
     play_quarter_note (ring 54, 61, 64).tick
     sleep 0.5
   end
+
+  # 13th measure
+  play_half_note 66 # F#
+  6.times do
+    # F#, A, D
+    play_quarter_note (ring 54, 57, 62).tick
+    sleep 0.5
+  end
+
+  play_quarter_note 67 # G
+  3.times do
+    # G, B, C#
+    play_quarter_note (ring 55, 59, 61).tick
+    sleep 0.5
+  end
+
+  play_quarter_note 64 # E
+  3.times do
+    # E, B, C#
+    play_quarter_note (ring 52, 59, 61).tick
+    sleep 0.5
+  end
+
+  # 14th measure
+  play_half_note 66 # F#
+  6.times do
+    # F#, A, D
+    play_quarter_note (ring 54, 57, 62).tick
+    sleep 0.5
+  end
+
+  play_half_note 66 # F#
+  6.times do
+    # F#, A#, C#
+    play_quarter_note (ring 54, 58, 61).tick
+    sleep 0.5
+  end
 end
 
 # Bass clef (C# minor)
@@ -332,5 +369,24 @@ in_thread do
   
   play_half_note 47+1 # B#
   play_half_note 35+1 # B#
+  sleep 3
+
+  # 13th measure
+  play_half_note 47 # B
+  play_half_note 35 # B
+  sleep 3
+
+  play_quarter_note 40 # E
+  sleep 1.5
+
+  play_quarter_note 43 # G
+  sleep 1.5
+
+  # 14th measure
+  play_half_note 42 # F#
+  sleep 3
+
+  play_half_note 42 # F#
+  play_half_note 30 # F#
   sleep 3
 end
