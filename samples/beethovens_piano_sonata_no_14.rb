@@ -289,6 +289,26 @@ in_thread do
     play_quarter_note (ring 54, 58, 61).tick
     sleep 0.5
   end
+
+  # 15th measure
+  6.times do
+    # B, D, F#
+    play_quarter_note (ring 59, 62, 66).tick
+    sleep 0.5
+  end
+
+  3.times do
+    # B, D#, F#
+    play_quarter_note (ring 59, 63, 66).tick
+    sleep 0.5
+  end
+
+  play_quarter_note 71 # B
+  3.times do
+    # B, D#, F#
+    play_quarter_note (ring 59, 63, 66).tick
+    sleep 0.5
+  end
 end
 
 # Bass clef (C# minor)
@@ -392,4 +412,9 @@ in_thread do
   play_half_note 42 # F#
   play_half_note 30 # F#
   sleep 3
+
+  # 15th measure
+  play_whole_note 47 # B
+  play_whole_note 35 # B
+  sleep 6
 end
