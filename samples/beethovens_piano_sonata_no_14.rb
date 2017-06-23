@@ -1,9 +1,12 @@
 # Beethoven's Piano Sonata No. 14 (Moonlight Sonata)
 
 use_synth :piano
-use_synth_defaults hard: 0.25, stereo_width: 0.33, vel: 0.22
 
-use_bpm 68
+# Si deve suonare tutto questo pezzo delicatissimamente e senza sordini
+# sempre pianissimo e senza sordini
+use_synth_defaults hard: 0.25, stereo_width: 0.33, vel: 0.25, attack_level: 0.33
+
+use_bpm 70
 
 # quarter note is 1 beat
 define :play_quarter_note do |note_name|
