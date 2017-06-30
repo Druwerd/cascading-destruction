@@ -30,7 +30,7 @@ end
 
 live_loop :rhythm_loop do
   sync :rhythm
-  sample :bd_pure, amp: 10
+  sample :bd_pure, amp: 2
 end
 
 # main rhythm
