@@ -20,10 +20,12 @@ end
 
 live_loop :melody_loop do
   sync :melody
-  [:C, :F, :G].each do |chord_name|
-    fx_chord(chord_name)
-    sleep 2
-  end
+  #[:C, :F, :G].each do |chord_name|
+  #  fx_chord(chord_name)
+  #  sleep 2
+  #end
+  fx_chord (ring :C, :F, :G).tick
+  sleep 2
 end
 
 live_loop :rhythm_loop do
