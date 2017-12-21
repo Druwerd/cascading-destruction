@@ -34,24 +34,28 @@ end
 
 in_thread do
   # 1
-  2.times do
-    sleep 0.5
-    eighth_note 62
-    eighth_note 57
-    eighth_note 53
-    sleep 0.5
-  end
+  sleep 0.5
+  eighth_note 62
+  eighth_note 57
+  eighth_note 53
+  sleep 0.5
+
+  sleep 0.5
+  eighth_note 64
+  eighth_note 59
+  eighth_note 55
+  sleep 0.5
   
   # 2
   sleep 0.5
   eighth_note 65
   eighth_note 59
-  eighth_note 56
+  eighth_note 55+1
   sleep 0.5
   
   sleep 0.5
-  eighth_note 61
-  eighth_note 58
+  eighth_note 60+1
+  eighth_note 59-1
   eighth_note 55
   sleep 0.5
   
@@ -83,88 +87,88 @@ in_thread do
   
   #5 
   sleep 0.5
+  sixteenth_note 89
   sixteenth_note 81
-  sixteenth_note 91
   sleep 0.25
+  sixteenth_note 86
   sixteenth_note 77
-  sixteenth_note 87
   sleep 0.25
 
-  eighth_note 81
-  eighth_note 91
-  sleep 0.5
-  eighth_note 79
   eighth_note 89
+  eighth_note 81
+  sleep 0.5
+  eighth_note 88
+  eighth_note 79
   sleep 0.5
 
   #6
+  eighth_note 84+1
   eighth_note 76
-  eighth_note 85
   sleep 0.5
+  eighth_note 86
   eighth_note 77
-  eighth_note 87
   sleep 0.5
 
-  sixteenth_note 75
-  sixteenth_note 79
-  sixteenth_note 86
+  sixteenth_note 84
+  sixteenth_note 77+1
+  sixteenth_note 76-1
   sleep 0.25
-  sixteenth_note 75
-  sixteenth_note 79
-  sixteenth_note 86
+  sixteenth_note 84
+  sixteenth_note 77+1
+  sixteenth_note 76-1
   sleep 0.25
-  eighth_note 75
-  eighth_note 79
-  eighth_note 86
+  eighth_note 84
+  eighth_note 77+1
+  eighth_note 76-1
   sleep 0.5
 
   #7
+  sixteenth_note 83
+  sixteenth_note 81-1
   sixteenth_note 77
   sixteenth_note 74
-  sixteenth_note 80
-  sixteenth_note 83
   sleep 0.25
+  sixteenth_note 83
+  sixteenth_note 81-1
   sixteenth_note 77
   sixteenth_note 74
-  sixteenth_note 80
-  sixteenth_note 83
   sleep 0.25
+  eighth_note 83
+  eighth_note 81-1
   eighth_note 77
   eighth_note 74
-  eighth_note 80
-  eighth_note 83
   sleep 0.5
 
-  sixteenth_note 83
+  sixteenth_note 83-1
   sixteenth_note 79
-  sixteenth_note 75
-  sixteenth_note 71
+  sixteenth_note 76
+  sixteenth_note 72+1
   sleep 0.25
 
-  sixteenth_note 83
+  sixteenth_note 83-1
   sixteenth_note 79
-  sixteenth_note 75
-  sixteenth_note 71
+  sixteenth_note 76
+  sixteenth_note 72+1
   sleep 0.25
 
-  eighth_note 83
+  eighth_note 83-1
   eighth_note 79
-  eighth_note 75
-  eighth_note 71
+  eighth_note 76
+  eighth_note 72+1
   sleep 0.5
 
   #8
   sixteenth_note 81
   sixteenth_note 77
   sleep 0.25
-  sixteenth_note 87
-  sixteenth_note 71
+  sixteenth_note 86
+  sixteenth_note 74
   sleep 0.25
   sixteenth_note 83
   sixteenth_note 79
   sleep 0.25
-  sixteenth_note 87
-  sixteenth_note 71
+  sixteenth_note 86
+  sixteenth_note 74
   sleep 0.25
 
   eighth_note 81
@@ -190,7 +194,7 @@ in_thread do
   #10
   eighth_note 83
   eighth_note 76
-  eighth_note 73
+  eighth_note 72+1
   sleep 0.5
   eighth_note 81
   eighth_note 77
@@ -200,103 +204,103 @@ in_thread do
   sixteenth_note 85
   sixteenth_note 83
   sixteenth_note 81
-  sixteenth_note 79
+  sixteenth_note 79+1
   sleep 0.25
   sixteenth_note 85
   sixteenth_note 83
   sixteenth_note 81
-  sixteenth_note 79
+  sixteenth_note 79+1
   sleep 0.25
   eighth_note 85
   eighth_note 83
   eighth_note 81
-  eighth_note 79
+  eighth_note 79+1
   sleep 0.5
 
   #11
-  sixteenth_note 89
-  sixteenth_note 85
-  sixteenth_note 81
-  sixteenth_note 78
-  sleep 0.25
-  sixteenth_note 89
-  sixteenth_note 85
-  sixteenth_note 81
-  sixteenth_note 78
-  sleep 0.25
-  eighth_note 89
-  eighth_note 85
-  eighth_note 81
-  eighth_note 78
-  sleep 0.5
-
   sixteenth_note 88
   sixteenth_note 84
   sixteenth_note 81
-  sixteenth_note 76
+  sixteenth_note 77+1
   sleep 0.25
   sixteenth_note 88
   sixteenth_note 84
   sixteenth_note 81
-  sixteenth_note 76
+  sixteenth_note 77+1
   sleep 0.25
   eighth_note 88
   eighth_note 84
   eighth_note 81
+  eighth_note 77+1
+  sleep 0.5
+
+  sixteenth_note 86
+  sixteenth_note 83
+  sixteenth_note 79+1
+  sixteenth_note 76
+  sleep 0.25
+  sixteenth_note 86
+  sixteenth_note 83
+  sixteenth_note 79+1
+  sixteenth_note 76
+  sleep 0.25
+  eighth_note 86
+  eighth_note 83
+  eighth_note 79+1
   eighth_note 76
   sleep 0.5
 
   #12
-  sixteenth_note 86
+  sixteenth_note 84+1
   sixteenth_note 81
   sleep 0.25
-  sixteenth_note 89
+  sixteenth_note 88
   sleep 0.25
-  sixteenth_note 87
-  sixteenth_note 80
+  sixteenth_note 86
+  sixteenth_note 79+1
   sleep 0.25
-  sixteenth_note 89
+  sixteenth_note 88
   sleep 0.25
 
-  eighth_note 86
+  eighth_note 84
   eighth_note 81
   sleep 0.5
 
   #13
   sleep 0.5
-  sixteenth_note 91
+  sixteenth_note 89
   sixteenth_note 81
   sleep 0.25
-  sixteenth_note 87
+  sixteenth_note 86
   sixteenth_note 77
   sleep 0.25
 
-  eighth_note 91
+  eighth_note 89
   eighth_note 81
   sleep 0.5
-  eighth_note 89
+  eighth_note 88
   eighth_note 79
   sleep 0.5
 
   #14
-  eighth_note 86
+  eighth_note 84+1
   eighth_note 76
   sleep 0.5
-  eighth_note 87
+  eighth_note 86
   eighth_note 77
   sleep 0.5
 
-  sixteenth_note 85
-  sixteenth_note 78
-  sixteenth_note 75
+  sixteenth_note 84
+  sixteenth_note 77+1
+  sixteenth_note 76-1
   sleep 0.25
-  sixteenth_note 85
-  sixteenth_note 78
-  sixteenth_note 75
+  sixteenth_note 84
+  sixteenth_note 77+1
+  sixteenth_note 76-1
   sleep 0.25
-  eighth_note 85
-  eighth_note 78
-  eighth_note 75
+  eighth_note 84
+  eighth_note 77+1
+  eighth_note 76-1
   sleep 0.5
 
   #15
@@ -316,17 +320,17 @@ in_thread do
   eighth_note 74
   sleep 0.5
 
-  sixteenth_note 81
+  sixteenth_note 83-1
   sixteenth_note 79
   sixteenth_note 76
   sixteenth_note 72+1
   sleep 0.25
-  sixteenth_note 81
+  sixteenth_note 83-1
   sixteenth_note 79
   sixteenth_note 76
   sixteenth_note 72+1
   sleep 0.25
-  eighth_note 81
+  eighth_note 83-1
   eighth_note 79
   eighth_note 76
   eighth_note 72+1
@@ -336,13 +340,13 @@ in_thread do
   sixteenth_note 81
   sixteenth_note 77
   sleep 0.25
-  sixteenth_note 87
+  sixteenth_note 86
   sixteenth_note 74
   sleep 0.25
   sixteenth_note 83-1
   sixteenth_note 79
   sleep 0.25
-  sixteenth_note 87
+  sixteenth_note 86
   sixteenth_note 74
   sleep 0.25
 
