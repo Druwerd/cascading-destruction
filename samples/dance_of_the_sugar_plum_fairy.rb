@@ -4,6 +4,13 @@ use_bpm 60
 
 use_synth_defaults hard: 0.25, vel: 0.3
 
+# 1/8 beat
+define :thirty_second_note do |note_name|
+  with_fx :reverb, room: 0.9 do
+    play note_name, attack: 0.0125, decay: 0.0125, sustain: 0.03125, release: 0.0625
+  end
+end
+
 # 1/4 beat
 define :sixteenth_note do |note_name|
   with_fx :reverb, room: 0.9 do
@@ -90,6 +97,7 @@ in_thread do
   eighth_note 89
   sleep 0.5
 
+  #6
   eighth_note 76
   eighth_note 85
   sleep 0.5
@@ -110,6 +118,7 @@ in_thread do
   eighth_note 86
   sleep 0.5
 
+  #7
   sixteenth_note 77
   sixteenth_note 74
   sixteenth_note 80
@@ -142,6 +151,269 @@ in_thread do
   eighth_note 79
   eighth_note 75
   eighth_note 71
+  sleep 0.5
+
+  #8
+  sixteenth_note 81
+  sixteenth_note 77
+  sleep 0.25
+  sixteenth_note 87
+  sixteenth_note 71
+  sleep 0.25
+  sixteenth_note 83
+  sixteenth_note 79
+  sleep 0.25
+  sixteenth_note 87
+  sixteenth_note 71
+  sleep 0.25
+
+  eighth_note 81
+  eighth_note 77
+  sleep 0.5
+
+  #9
+  sleep 0.5
+  sixteenth_note 77
+  sixteenth_note 71
+  sleep 0.25
+  sixteenth_note 74
+  sixteenth_note 65
+  sleep 0.25
+
+  eighth_note 77
+  eighth_note 71
+  sleep 0.5
+  eighth_note 76
+  eighth_note 71
+  sleep 0.5
+
+  #10
+  eighth_note 83
+  eighth_note 76
+  eighth_note 73
+  sleep 0.5
+  eighth_note 81
+  eighth_note 77
+  eighth_note 74
+  sleep 0.5
+
+  sixteenth_note 85
+  sixteenth_note 83
+  sixteenth_note 81
+  sixteenth_note 79
+  sleep 0.25
+  sixteenth_note 85
+  sixteenth_note 83
+  sixteenth_note 81
+  sixteenth_note 79
+  sleep 0.25
+  eighth_note 85
+  eighth_note 83
+  eighth_note 81
+  eighth_note 79
+  sleep 0.5
+
+  #11
+  sixteenth_note 89
+  sixteenth_note 85
+  sixteenth_note 81
+  sixteenth_note 78
+  sleep 0.25
+  sixteenth_note 89
+  sixteenth_note 85
+  sixteenth_note 81
+  sixteenth_note 78
+  sleep 0.25
+  eighth_note 89
+  eighth_note 85
+  eighth_note 81
+  eighth_note 78
+  sleep 0.5
+
+  sixteenth_note 88
+  sixteenth_note 84
+  sixteenth_note 81
+  sixteenth_note 76
+  sleep 0.25
+  sixteenth_note 88
+  sixteenth_note 84
+  sixteenth_note 81
+  sixteenth_note 76
+  sleep 0.25
+  eighth_note 88
+  eighth_note 84
+  eighth_note 81
+  eighth_note 76
+  sleep 0.5
+
+  #12
+  sixteenth_note 86
+  sixteenth_note 81
+  sleep 0.25
+  sixteenth_note 89
+  sleep 0.25
+  sixteenth_note 87
+  sixteenth_note 80
+  sleep 0.25
+  sixteenth_note 89
+  sleep 0.25
+
+  eighth_note 86
+  eighth_note 81
+  sleep 0.5
+
+  #13
+  sleep 0.5
+  sixteenth_note 91
+  sixteenth_note 81
+  sleep 0.25
+  sixteenth_note 87
+  sixteenth_note 77
+  sleep 0.25
+
+  eighth_note 91
+  eighth_note 81
+  sleep 0.5
+  eighth_note 89
+  eighth_note 79
+  sleep 0.5
+
+  #14
+  eighth_note 86
+  eighth_note 76
+  sleep 0.5
+  eighth_note 87
+  eighth_note 77
+  sleep 0.5
+
+  sixteenth_note 85
+  sixteenth_note 78
+  sixteenth_note 75
+  sleep 0.25
+  sixteenth_note 85
+  sixteenth_note 78
+  sixteenth_note 75
+  sleep 0.25
+  eighth_note 85
+  eighth_note 78
+  eighth_note 75
+  sleep 0.5
+
+  #15
+  sixteenth_note 83
+  sixteenth_note 81-1
+  sixteenth_note 77
+  sixteenth_note 74
+  sleep 0.25
+  sixteenth_note 83
+  sixteenth_note 81-1
+  sixteenth_note 77
+  sixteenth_note 74
+  sleep 0.25
+  eighth_note 83
+  eighth_note 81-1
+  eighth_note 77
+  eighth_note 74
+  sleep 0.5
+
+  sixteenth_note 81
+  sixteenth_note 79
+  sixteenth_note 76
+  sixteenth_note 72+1
+  sleep 0.25
+  sixteenth_note 81
+  sixteenth_note 79
+  sixteenth_note 76
+  sixteenth_note 72+1
+  sleep 0.25
+  eighth_note 81
+  eighth_note 79
+  eighth_note 76
+  eighth_note 72+1
+  sleep 0.5
+
+  #16
+  sixteenth_note 81
+  sixteenth_note 77
+  sleep 0.25
+  sixteenth_note 87
+  sixteenth_note 74
+  sleep 0.25
+  sixteenth_note 83-1
+  sixteenth_note 79
+  sleep 0.25
+  sixteenth_note 87
+  sixteenth_note 74
+  sleep 0.25
+
+  eighth_note 81
+  eighth_note 77
+  sleep 0.5
+
+  #17
+  sleep 0.5
+  sixteenth_note 74
+  sixteenth_note 67+1
+  sleep 0.25
+  sixteenth_note 71
+  sixteenth_note 64
+  sleep 0.25
+
+  eighth_note 74
+  eighth_note 67+1
+  sleep 0.5
+  eighth_note 72+1
+  eighth_note 69
+  eighth_note 67
+  sleep 0.5
+
+  #18
+  sleep 0.5
+  sixteenth_note 72
+  sixteenth_note 65+1
+  sleep 0.25
+  sixteenth_note 69
+  sixteenth_note 59
+  sleep 0.25
+
+  eighth_note 72
+  eighth_note 65+1
+  sleep 0.5
+  eighth_note 71
+  eighth_note 67
+  eighth_note 65
+  sleep 0.5
+
+  #19
+  sleep 0.5
+  sixteenth_note 71-1
+  sixteenth_note 64
+  sleep 0.25
+  sixteenth_note 67
+  sixteenth_note 60
+  sleep 0.25
+
+  eighth_note 71-1
+  eighth_note 64
+  sleep 0.5
+  eighth_note 69
+  eighth_note 65
+  sleep 0.5
+
+  #20
+  sleep 0.5
+  thirty_second_note 69
+  sleep 0.125
+  thirty_second_note 72+1
+  sleep 0.125
+  thirty_second_note 76
+  sleep 0.125
+  thirty_second_note 81
+  sleep 0.125
+
+  eighth_note 74
+  sleep 0.5
+  eighth_note 57
   sleep 0.5
 end
 
